@@ -11,7 +11,7 @@ package_installed_keyboard-configuration:
 
 /etc/vconsole.conf:
   file.managed:
-    replace: False
+    - replace: False
 
 locale_pkgs:
   pkg.installed:
