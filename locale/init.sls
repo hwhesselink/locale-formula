@@ -19,8 +19,8 @@ locale_pkgs:
         - {{ pkg }}
       {% endfor %}
     - require:
-      pkg: keyboard-configuration
-      file: /etc/vconsole.conf
+      - pkg: keyboard-configuration
+      - file: /etc/vconsole.conf
 
 {%- set locales = salt['pillar.get']('locale:present', []) %}
 {%- set default = salt['pillar.get']('locale:default', 'en_US.UTF-8') %}
