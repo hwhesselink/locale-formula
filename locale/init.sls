@@ -10,7 +10,7 @@ package_installed_keyboard-configuration:
     - name: keyboard-configuration
 
 /etc/vconsole.conf:
-  file.touch
+  file.managed
 
 locale_pkgs:
   pkg.installed:
