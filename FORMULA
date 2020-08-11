@@ -1,0 +1,9 @@
+name: locale
+os: Debian, Ubuntu, RedHat, Fedora, CentOS, Suse, openSUSE
+os_family: Debian, RedHat, Suse
+version: 0.3.3
+release: 1
+minimum_version: 2017.7
+summary: Locale formula
+description: Formula to use to install and configure locale
+top_level_dir: locale
